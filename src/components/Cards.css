@@ -1,0 +1,30 @@
+.Cards{
+    color: #000;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+    
+    
+    
+}
+
+@media only screen and (max-width: 1255px){
+    .Cards{
+        grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 850px){
+    .Cards{
+        grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+
+    }
+
+    
+}

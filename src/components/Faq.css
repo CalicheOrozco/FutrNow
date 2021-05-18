@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Ropa+Sans&display=swap');
+
+.Faq--Container { 
+    text-align: center;
+}
+
+
+.Faq__btn{
+    height: 72px;
+    width: 100%;
+    background-color: #4B73FF;
+    border-radius: 4px;
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(25, 1fr);
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+
+.Faq__btn:hover{
+    background-color: #3c5ccf;
+}
+
+.Faq__btn a{
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    grid-column: 1/20;
+    grid-row: 3/5;
+
+}
+
+.Faq__btn--arrow{
+    background-image: url('../assets/images/arrow.png');
+    grid-column: 24/25;
+    grid-row: 2/5;
+    width: 40px;
+    height: 50px;
+    
+}
+
+.Faq--Container p{
+    font-family: Ropa Sans;
+    font-size: 18px;
+    font-style: normal;
+    height: 98px;
+    width: 85%;
+    text-align: justify;
+    color: #FFFFFF;
+    line-height: 147.8%;
+
+
+
+}
+
+@media (max-width: 576px){
+
+    .Faq__btn--arrow{
+        background-image: url('../assets/images/arrow.png');
+        grid-column: 22/25;
+        grid-row: 2/5;
+    }
+
+}
+
+
+
+
+
+
+

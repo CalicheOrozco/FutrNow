@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ropa+Sans&display=swap');
+.MainSection{
+    
+    color: #000;
+    width: 100%;
+    height: 590px;
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(15, 1fr);
+    
+    
+}
+
+
+
+.MainSection--title{
+    
+    grid-column: 1/16;
+    grid-row: 5/8;
+    
+
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+
+    color: #1505CC;
+}
+
+.MainSection--content{
+    grid-column: 4/13;
+    grid-row: 8/10;
+
+    font-family: Ropa Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #343434;
+    margin-bottom: 50px;
+}
+
+.MainSection--content p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 26px;
+}
+
+.MainSection--title h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 1200px){
+
+    .MainSection{
+        
+        grid-template: repeat(5, 1fr) / repeat(7, 1fr); 
+        
+    }
+
+    .MainSection--title{
+        font-size: 36px;
+        grid-column: 1/16;
+        grid-row: 4/6;
+        text-align: center; 
+        margin: 0px 20px;
+    
+        
+    }
+
+    .MainSection--content{
+        font-size: 24px;
+        grid-column: 1/16;
+        grid-row: 6/7;
+        text-align: center;
+        margin: 20px 20px;
+    }
+
+}
+
+@media (max-width: 662px){
+
+    .MainSection--title{
+        font-size: 25px;
+        grid-row: 3/5;
+        
+    
+        
+    }
+
+    .MainSection--content{
+        font-size: 20px;
+        grid-row: 5/6;
+        margin: 10px 10px;
+    
+    }
+
+}
+
+

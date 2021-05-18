@@ -1,23 +1,62 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {Helmet} from "react-helmet";
+import './App.css'
+import MainSection from './components/MainSection'
+import Home from './components/Home'
+import Button from './components/Button'
+import Cards from './components/Cards'
+import CardsItem from './components/CardsItem'
+import Schedule from './components/Schedule'
+import Register from './components/Register'
+import Footer from './components/Footer'
+import Faq from './components/Faq'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Futurnow</title>
+      
+    </Helmet>
+      
+      <div className="main--Container">
+        
+        <Home>
+          <Button />
+        </Home>
+        
+        <MainSection />
+        
+        
+        <Cards>
+        
+          <CardsItem />
+          <CardsItem />
+          <CardsItem />
+          
+            
+        </Cards>
+
+        <Schedule />
+        <Register>
+          <Button />
+        </Register>
+
+        <Footer>
+          <Faq />
+          <Faq />
+        </Footer>
+        
+
+      </div>
+      
+      
+      
+      
+      
     </div>
   );
 }

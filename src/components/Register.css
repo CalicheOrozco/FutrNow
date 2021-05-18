@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@700&family=Ropa+Sans&display=swap');
+
+.Register{
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(15, 1fr);
+    grid-area: Register;
+}
+
+
+.Register--container{
+    display: contents;
+
+}
+
+
+
+
+
+.Register__form{
+    width: 469px;
+    height: 582px;
+    background: #343434;
+    border-radius: 25px;
+    grid-column: 6/16;
+    grid-row: 5/12;
+       
+}
+
+.Register__form--section{
+
+    
+    grid-column: 1/16;
+    grid-row: 2/9;
+    display: grid;
+    justify-content: center;
+
+
+}
+
+
+
+.Register__form--container{
+    display: grid;
+    grid-template: repeat(12, 1fr) / repeat(15, 1fr);
+
+}
+
+.Register__form--title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+
+    grid-column: 3/14;
+    grid-row: 2/3;
+    
+
+color: #FFFFFF;
+}
+
+.Register__form a{
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    grid-column: 6/11;
+    grid-row: 4/12;
+}
+
+.Register__form--name{
+    grid-column: 3/11;
+    grid-row: 4/5;
+}
+
+.Register__form--name__input{
+    grid-column: 3/11;
+    grid-row: 5/12;
+    width: 315px;
+    height: 52px;
+}
+
+.Register__form--name__input input{
+    width: 315px;
+    height: 52px;
+}
+
+.Register__form--mail{
+    grid-column: 3/11;
+    grid-row: 7/8;
+}
+
+.Register__form--mail__input{
+    grid-column: 3/11;
+    grid-row: 8/12;
+    width: 315px;
+    height: 52px;
+}
+.Register__form__btn{
+    grid-column: 3/11;
+    grid-row: 10/11;
+}
+
+.Register__form--mail__input input{
+    width: 315px;
+    height: 52px;
+}
+.Register__form--btn{
+    height: 56px;
+    width: 341px;
+
+    background: #4B73FF;
+    border-radius: 5px;
+}
+
+.Register__form--btn a{
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+input {
+    font-size: 26px;
+    padding: 10px;    
+    border: 1px solid white;
+    outline: none;
+}
+
+
+  @media only screen and (max-width: 516px){
+  .Register__form--name__input input, .Register__form--mail__input input  {
+    width: 259px !important;
+    height: 52px;
+    
+}
+  }
+@media only screen and (max-width: 1255px){
+    
+    .Register{
+        grid-template: repeat(5, 1fr) / repeat(7, 1fr);
+        background: #EDEEEF; 
+        height: 753px;
+        
+    }
+
+    .Register__form{
+        background-color: transparent;
+        width: 100%;
+    }
+
+    
+
+    .Register__form--name a, .Register__form--mail a {
+        color: #000;
+    }
+
+    .Register__form--name__input input, .Register__form--mail__input input  {
+        width: 400px;
+        height: 52px;
+    }
+
+    .Button--container {
+        height: 56px;
+        width: 241px;
+    }
+
+    .Register__form--name__input, .Register__form--mail__input{
+        
+        width: 259px;
+        height: 52px;
+    }
+
+    .Register__form--title {
+        font-size: 20px;
+        color: #1505CC;
+    }
+
+    .Register__form--section{
+
+        grid-column: 1/8;
+        grid-row: 1/9;
+        display: grid;
+        justify-content: center;
+    
+    
+    }
+
+    
+}

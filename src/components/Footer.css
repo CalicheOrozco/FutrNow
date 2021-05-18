@@ -1,0 +1,94 @@
+
+.Footer--Container{
+    display: contents;
+    height: 794px;
+    width: 100%;
+    background-color: #252525;
+    border-radius: 100px 71px 0px 0px;
+    display: grid;
+    grid-template: repeat(21, 1fr) / repeat(17, 1fr);
+}
+
+.Footer__img--container{
+    grid-column: 1/18;
+    grid-row: 1/3;
+    display: grid;
+    justify-content: center;
+}
+
+.Footer__img{
+    background-image: url('../assets/images/Allura\ Laptop.png');
+    grid-column: 1/12;
+    grid-row: 1/5;
+    top: 60px;
+    position: relative;
+    top: -70px;
+
+    display: grid;
+    justify-content: center;
+    background-size: 394px 124px;
+    width: 200px;
+    height: 124px;
+    background-position: center;
+}
+
+.Footer--title {
+    display: grid;  
+    grid-column: 1/18;
+    grid-row: 6/7;
+
+}
+
+.Footer--title h1{
+    font-family: Roboto;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;  
+
+}
+
+.Footer--Faq{
+    grid-column: 2/17;
+    grid-row: 9/22;
+    display: grid;
+    justify-content: center;
+    
+}
+
+@media only screen and (max-width: 1255px){
+.Footer--title h1{
+    
+    font-size: 19px;
+    
+
+}
+}
+
+
+@media only screen and (max-width: 1255px){
+
+    .Footer{
+        background-color: #EDEEEF; 
+         
+     }
+
+    .Footer--Container{
+        
+        border-radius: 71px 71px 0px 0px;
+    
+    }
+
+    .Footer--title {
+        
+        grid-row: 3/5;
+    }
+
+    .Footer--Faq{
+        
+        grid-row: 6/22;
+        
+        
+    }
+    
+
+}
