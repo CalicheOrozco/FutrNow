@@ -67,7 +67,7 @@
 .Home--content__btn{
 
     grid-column: 10/13;
-    grid-row: 7/8;
+    grid-row: 8/9;
     cursor: pointer;
     
     
@@ -102,7 +102,7 @@
 
     .Home--content{
         
-        grid-column: 1/16;
+        grid-column: 2/7;
         grid-row: 3/4;
         text-align: center;
         margin: 0px 20px;
@@ -144,6 +144,15 @@
         left: 0px;
         top: -140px;
         background-position:center ;
+    }
+}
+
+@media (max-width: 684px){
+    .Home--content{
+        
+        grid-column: 1/8;
+        grid-row: 3/4;
+        
     }
 }
 

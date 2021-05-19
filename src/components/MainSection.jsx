@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+import React from 'react'
 import './MainSection.css'
 import Fade from 'react-reveal/Fade';
 

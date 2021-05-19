@@ -117,19 +117,18 @@
     
 
     .Cards--container--item{
-        grid-template: repeat(15, 1fr) / repeat(17, 1fr);
-        grid-area:cards--container--item;
-        height: 550px;
         margin-left: 0px;
-        width: 90%;
-        
+        width: 100%;
     }
+    
+
+    
 
     .Cards--container--item__img{
-        grid-column: 5/12;
+        grid-column: 1/18;
         grid-row: 1/5;
         height: 200px;
-        width: 200px;
+        width: 100%;
 
     
     }
@@ -137,6 +136,8 @@
     .Cards--container--item__title{
         grid-column: 2/17;
         grid-row: 6/8;
+        width: 90%;
+        padding: 0px 15px;
     
     }
 
@@ -144,16 +145,17 @@
         grid-column: 2/17;
         grid-row: 10/14;
         display: grid;
-        width: 100%;
+        width: 90%;
+        padding: 0px 15px;
     
     }
 
     .Cards--container--item__social-media{
         grid-column: 2/6;
         grid-row: 15/18;
+        padding: 0px 15px;
     
     }
-    
 
 }
 
