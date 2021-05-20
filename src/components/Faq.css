@@ -43,6 +43,11 @@
     height: 50px;
     
 }
+.Faq__btn--arrow:hover{
+    background-image: url('../assets/images/arrow2.png');
+    
+    
+}
 
 .Faq--Container p{
     font-family: Ropa Sans;
@@ -61,7 +66,6 @@
 @media (max-width: 576px){
 
     .Faq__btn--arrow{
-        background-image: url('../assets/images/arrow.png');
         grid-column: 22/25;
         grid-row: 2/5;
     }
